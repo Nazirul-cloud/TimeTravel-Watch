@@ -65,7 +65,7 @@ async function run() {
 
     })
 
-    //DELETE ORDERS
+    //DELETE ORDERS API
     app.delete('/orders/:key', async(req, res) =>{
       const key1 = req.params.key;
       const query = { key : key1 };
@@ -79,14 +79,6 @@ async function run() {
     }
   }
   run().catch(console.dir);
-
-
-
-
-
-
-
-
 
 
 app.get('/', (req, res) => {
